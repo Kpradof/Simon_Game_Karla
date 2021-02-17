@@ -9,7 +9,13 @@ var started = false;
 
 var level = 0;
 
+$(".start-button").click(function() {
 
+    if (started === false){
+        nextSequence();
+    }
+    started = true;
+});
 
 $(".btn").click(function() {
   var userChosenColor = (this.id);
